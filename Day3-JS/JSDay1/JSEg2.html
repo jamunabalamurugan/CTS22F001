@@ -1,0 +1,28 @@
+<HTML>
+    <HEAD>
+    <SCRIPT LANGUAGE="JavaScript">
+    
+    function MsgBox (myname,age) {
+    alert ("Hello " + myname+" You are "+age +" yars old") }
+
+    function Sample(num1,num2)
+    {
+       var total=parseInt(num1) + parseInt(num2);
+        // alert("total is "+ total)
+        return total;
+    }
+
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    <FORM>
+    <INPUT NAME="text1" TYPE=Text><br>
+
+        Number1 : <input type="number" name="n1"> <br>
+        Number2 : <input type="number" name="n2">
+    <INPUT NAME="submit" TYPE=Button VALUE="Show Me" onClick="MsgBox(text1.value,age.value)">
+        <input type="submit"  value="Add" onClick="alert('Total is : '+ Sample(n1.value,n2.value));">
+    </FORM>
+    </BODY>
+    </HTML>
+    

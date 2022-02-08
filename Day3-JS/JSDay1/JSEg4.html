@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+    <div>
+        First Div - Users without Javascript see  this.
+    </div>
+<div id='feedback' onClick='goodbye()'>Second Div -Users without Javascript see  this.</div>
+
+<script type='text/javascript'> 
+
+document.getElementById('feedback').innerHTML='Hello World!';
+function goodbye() {
+    var feedback=document.getElementById('feedback');
+    var alldiv=document.getElementsByTagName('div');
+
+
+    if(feedback.innerHTML=='Hello World!')
+    {
+       feedback.innerHTML='Goodbye World!';
+    
+    }
+    else
+    {
+        feedback.innerHTML='Hello World!';  
+    }
+}
+</script>
+</body>
+</html>
