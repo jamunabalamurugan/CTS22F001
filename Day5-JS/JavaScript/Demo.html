@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var v1,v2;
+		v1=1000;
+		v2=2000;
+		//alert(v1);
+		v1="Hello";
+		alert(v1);
+		console.log("find me");
+		document.write("In the web page");
+document.write(5+"6");
+var a,b,res=0;
+function printoddnumbers()
+{
+a=prompt("Enter the value of a",20);
+b=prompt("Enter the value of b");
+for(;a<=b;a++)
+{
+//document.writeln(a/2);
+console.log(a);
+if ((a%2)==1 )
+	document.writeln("\nodd No is:" + a+"  ");
+}
+}
+function printeven()
+{
+	a=prompt("Enter the value of a",20);
+	b=prompt("Enter the value of b");
+	for(;a<=b;a++)
+	{
+		if(a%2==0)
+		document.writeln("Even numbers are : "+a+" ");
+	}
+}
+//alert(a);
+</script>
+</head>
+<body>
+	<input TYPE="submit" onClick="printeven()"/>
+
+	<script>
+		printoddnumbers();
+	</script>
+</body>
+</html>

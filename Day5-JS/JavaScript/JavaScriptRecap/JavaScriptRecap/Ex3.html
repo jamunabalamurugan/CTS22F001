@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Number</h2>
+    <p name="len" id="len" style="color:blue"></p><br/>
+    <h2>String</h2>
+    <p name="str" id="str" style="color:crimson"></p><br />
+   <h2>object</h2>
+   <p name="obj" id="obj1" style="color:darkmagenta"></p><br />
+   <h2>Show Initials with diff between id and name</h2>
+   <p name="obj" id="obj2" style="color:darkmagenta" onmouseover="age=10;alert('Hello...this will show the initials'+age)"></p><br />
+    <button id="Show" onclick="DaysLeft()" >Show</button>
+
+    <script>
+        var length = 20;
+        var Name = "Jamuna";
+        var x = { firstname: "Kavin", Lastname: "Kumar", Age: 25 };
+        document.getElementById("len").innerHTML = length;
+        document.getElementById("str").innerHTML = Name;
+        document.getElementById("obj1").innerHTML = x.firstname + " " + x.Lastname + " " + x.Age;
+        document.getElementById("obj2").innerHTML = x.firstname.slice(0,3) + " " + x.Lastname.charAt(0) + " " + x.Age;
+        function DaysLeft()
+        {
+        today=new Date();
+        lastdate=new Date();
+        lastdate.setFullYear(2021,10,18);
+        
+        document.writeln(lastdate+"<br/>");
+        document.writeln(today);
+        if (lastdate>today)
+        {
+	        var day = 1000 * 60 * 60 * 24;
+	        x=(lastdate-today)/day;
+            alert("Number of days left "+x);
+        }
+        else
+        {
+            alert("time up"); 
+        }
+
+        console.log(today);
+    }
+    </script>
+
+</body>
+</html>
