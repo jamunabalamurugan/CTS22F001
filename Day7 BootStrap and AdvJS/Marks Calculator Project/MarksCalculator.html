@@ -1,0 +1,126 @@
+<!-- Latest compiled and minified CSS -->
+<html>
+    <head>
+        <title>My Calculator</title>
+        <meta charset="="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1,shrink-to-fit-no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    #loading, #results{
+        display:none;
+    }
+</style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class=row>
+            <div class="col-md-6 mx-auto">
+                <h3 class="heading display-6 pb-3">Central Board of Secondary Education</h3>
+            </div>
+        </div>
+        <div class=row>
+            <div class="col-md-6 mx-auto">
+                <div class="card-body text-left mt-4">
+                    
+                    <h6 align=center>Examination Results</h6>
+                    <h6 align=center>Senior School Certificate Examination (Class XII) Results 2019</h6>
+                    <table>
+                    <tr><td>Roll No:              </td><td>4609100</td></tr>
+                    <tr><td>Candidate Name:       </td><td>Harshitha B</td></tr>
+                    <tr><td>Mother's Name:        </td><td>Jamuna B</td></tr>
+                    <tr><td>Father's Name:        </td><td>M S Balamurugan</td></tr>
+                    <tr><td>School's Name:        </td><td>BHAVAN's RAJAJI VIDYASHRAM KILPAUK CHENNAI TN</td></tr>
+                    </table>
+                    <table border=2>
+                        <tr>
+                        
+                            <th> SUB CODE </th>
+                            <th>SUB NAME</th>
+                            <th>THEORY</th>
+                            <th>PRACTICAL</th>
+                            <th>MARKS</th>
+                            <th>GRADE</th>
+                        </tr>
+                        <tr>
+                            <td>301</td>
+                            <td>ENGLISH CORE</td>
+                            <td>092</td>
+                            <td></td>
+                            <td>092</td>
+                            <td>A1</td>
+                        </tr>
+                        <tr>
+                            <td>041</td>
+                            <td>MATHEMATICS</td>
+                            <td>094</td>
+                            <td></td>
+                            <td>094</td>
+                            <td>A2</td>
+                        </tr>
+                        <tr>
+                            <td>042</td>
+                            <td>PHYSICS</td>
+                            <td>065</td>
+                            <td></td>
+                            <td>030</td>
+                            <td>A1</td>
+                        </tr>
+                        <tr>
+                            <td>043</td>
+                            <td>CHEMISTRY</td>
+                            <td>065</td>
+                            <td>30</td>
+                            <td>095</td>
+                            <td>A1</td>
+                        </tr>
+                        <tr>
+                            <td>044</td>
+                            <td>BILOGY</td>
+                            <td>066</td>
+                            <td>30</td>
+                            <td>096</td>
+                            <td>A1</td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td>BILOGY</td>
+                            <td>066</td>
+                            <td>30</td>
+                            <td>096</td>
+                            <td>A1</td>
+                        </tr>
+                    </table>
+                    <form id="marks-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-admin">Examination Results</span>
+                                <input type="number" class="form-control" id="percentage" placeholder="Percantage of Marks">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="calculate" class="btn btn-dark btn-block">
+                        </div>
+                        <div id="loading">
+                            <img src="img/loading.gif" alt="">
+                        </div>
+                        <div id="results" class="pt-4">
+                            <h5>Results</h5>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Admission Status</span>
+                                    <input type="number" class="form-control" id="admission-status" disabled>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="marks.js"></script>
+</body>
+</html>
